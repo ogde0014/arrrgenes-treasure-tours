@@ -4,9 +4,7 @@ html {
   font-family: "Libre Baskerville", serif;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
@@ -56,12 +54,17 @@ body {
   text-decoration: none;
 }
 
+.nav a:focus {
+  outline: 3px solid #fff;
+}
+
 .banner {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "banner";
   color: #fff;
+  background-color: brown;
   font-size: 1.5rem;
 }
 
@@ -79,8 +82,7 @@ body {
   text-align: center;
 }
 
-.banner h2,
-.banner p {
+.banner h2, .banner p {
   margin: 0 0 1.5rem;
 }
 
